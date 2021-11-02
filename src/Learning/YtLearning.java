@@ -2,12 +2,15 @@ package Learning;
 
 public class YtLearning {
     public static void main(String[] args) {
-        int x = 123;
-        double y = 3.14;
-        boolean z = true;
-        char symbol = '@';
-        String name = "Bro";
+        String x = "water";
+        String y = "Kool-Aid";
+        String temp;
 
-        System.out.println("Hello "+name);
+        temp = x;
+        x=y;
+        y=temp;
+
+        System.out.println("x: "+x);
+        System.out.println("y: "+y);
     }
 }
