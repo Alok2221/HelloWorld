@@ -1,21 +1,14 @@
 package Learning;
 
-import java.util.Scanner;
-
 public class YtLearning {
     public static void main(String[] args) {
 
-        // while loop = executes a block of code as long as it's condition remains true
+        // for loop = executes  block of code limited amount of times
 
-        Scanner scanner = new Scanner(System.in);
-        String name = "";
-
-        do {
-            System.out.print("Enter your name: ");
-            name = scanner.nextLine();
+        for (int i = 10; i >= 0; i--) {
+            System.out.println(i);
         }
-        while (name.isBlank());
-        System.out.println("Hello " + name);
+        System.out.println("Happy New Year!!! ");
     }
 }
 
