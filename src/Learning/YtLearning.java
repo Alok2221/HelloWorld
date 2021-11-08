@@ -1,30 +1,14 @@
 package Learning;
 
-import java.util.Scanner;
-
 public class YtLearning {
     public static void main(String[] args) {
 
-        // nested loops = a loop inside of a loop
+        // array = used to store multiple values in single variable
 
-        Scanner scanner = new Scanner(System.in);
+        String[] cars = {"Camaro", "Corvette", "Tesla", "BMW"};
 
-        int rows, columns;
-        String symbol = "";
-
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
-        System.out.println("Enter # of columns: ");
-        columns = scanner.nextInt();
-        System.out.println("Enter symbol to use: ");
-        symbol = scanner.next();
-
-        for (int i = 1; i <= rows; i++) {
-            System.out.println();
-            for (int j = 1; j <= columns; j++) {
-                System.out.print(symbol);
-            }
-        }
+        cars[0] = "Mustang";
+        System.out.println(cars[3]);
     }
 }
 
