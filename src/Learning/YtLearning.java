@@ -1,26 +1,21 @@
 package Learning;
 
-import java.util.ArrayList;
-
 public class YtLearning {
 
     public static void main(String[] args) {
 
-        // for-each =   traversing technique to iterate through the elements in an array/collection
-        //              less steps, more readable
-        //              less flexible
+        // method = a block of code that is executed whenever it is called upon
 
-       // String [] animals = {"cat", "dog", "rat","bird"};
-        ArrayList<String> animals = new ArrayList<String>();
+        String name = "Aleks";
+        int age = 19;
 
-        animals.add("cat");
-        animals.add("dog");
-        animals.add("rat");
-        animals.add("bird");
+        hello(name, age);
 
-        for (String i : animals){
-            System.out.println(i);
-        }
+    }
+
+    static void hello(String name, int age) {
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age);
     }
 }
 
