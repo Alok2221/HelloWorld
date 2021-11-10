@@ -6,16 +6,17 @@ public class YtLearning {
 
         // method = a block of code that is executed whenever it is called upon
 
-        String name = "Aleks";
-        int age = 19;
+        int x = 3;
+        int y = 4;
 
-        hello(name, age);
+        System.out.println(add(x, y));
 
     }
+    static int add(int x, int y) {
 
-    static void hello(String name, int age) {
-        System.out.println("Hello " + name);
-        System.out.println("You are " + age);
+        int z = x + y;
+        return z;
+
     }
 }
 
