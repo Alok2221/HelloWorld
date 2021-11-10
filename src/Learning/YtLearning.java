@@ -6,24 +6,31 @@ public class YtLearning {
 
     public static void main(String[] args) {
 
-        // ArrayList = a resizable array.
-        //             Elements can be added and removed after compilation phase
-        //             store reference data types
+        // 2D ArrayList = a dynamic list of lists
+        // You can change the size of these lists during runtime
 
-        ArrayList<String> food = new ArrayList<String>();
+        ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
 
-        food.add("pizza");
-        food.add("hamburger");
-        food.add("hotdog");
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("pasta");
+        bakeryList.add("garlic bread");
+        bakeryList.add("donut");
 
-        food.set(0, "sushi");
-        food.remove(2);
-        food.clear();
+        ArrayList<String> produceList = new ArrayList();
+        produceList.add("tomatoes");
+        produceList.add("zucchini");
+        produceList.add("peppers");
 
-        for (int i = 0; i < food.size(); i++) ;
-        {
-            System.out.println(food);
-        }
+        ArrayList<String> drinksList = new ArrayList();
+        drinksList.add("soda");
+        drinksList.add("coffee");
+
+
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+
+        System.out.println(groceryList.get(2).get(1));
     }
 }
 
