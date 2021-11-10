@@ -1,26 +1,33 @@
 package Learning;
 
-import java.util.Locale;
-
 public class YtLearning {
     public static void main(String[] args) {
 
-        // String = a reference data type that can store one or more characters
-        //          reference data types have access to useful methods
+        // wrapper class = provides a way to use primitive data types as reference data types
+        //                 reference data types contain useful methods
+        //                 can be used with collections (ex. ArrayList)
+        // primitive data types are much faster
 
-        String name = "   Aleks  ";
 
-        // boolean result = name.equalsIgnoreCase("Aleks");
-        // int result = name.length();
-        // char  result = name.charAt(0);
-        // int result = name.indexOf("A");
-        // boolean result = name.isEmpty();
-        // String result = name.toUpperCase();
-        // String result = name.toLowerCase();
-        // String result = name.trim();
-        String result = name.replace('k','s');
+        // primitive        // wrapper
+        // ---------        // -------
+        // boolean          // Boolean
+        // char             // Character
+        // int              // Integer
+        // double           // Double
 
-        System.out.println(result);
+        // autoboxing = the automatic conversion that Java compiler makes between the primitive types and their corresponding object wrapper classes
+        // unboxing = the reverse of autoboxing. Automatic conversion of wrapper class to primitive
+
+        Boolean a = true;
+        Character b = '@';
+        Integer c = 123;
+        Double d = 3.14;
+        String e = "Aleks";
+
+        if (a == true) {
+            System.out.println("This is true");
+        }
     }
 }
 
