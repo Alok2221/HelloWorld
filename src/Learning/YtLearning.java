@@ -1,22 +1,26 @@
 package Learning;
 
+import java.util.Locale;
+
 public class YtLearning {
     public static void main(String[] args) {
 
-        // 2D arrays = an array of arrays
+        // String = a reference data type that can store one or more characters
+        //          reference data types have access to useful methods
 
-        String[][] cars = {
-                {"Camaro", "Corvette", "Silverado"},
-                {"Mustang", "Ranger", "F-150"},
-                {"Ferrari", "Lambo", "Tesla"}
-        };
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println();
-            for (int j = 0; j < cars[i].length; j++) {
-                System.out.print(cars[i][j] + " ");
-            }
-        }
+        String name = "   Aleks  ";
 
+        // boolean result = name.equalsIgnoreCase("Aleks");
+        // int result = name.length();
+        // char  result = name.charAt(0);
+        // int result = name.indexOf("A");
+        // boolean result = name.isEmpty();
+        // String result = name.toUpperCase();
+        // String result = name.toLowerCase();
+        // String result = name.trim();
+        String result = name.replace('k','s');
+
+        System.out.println(result);
     }
 }
 
