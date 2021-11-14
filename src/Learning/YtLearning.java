@@ -5,22 +5,16 @@ public class YtLearning {
 
     public static void main(String[] args) {
 
-        // object = an instance of a class that may contain attributes and methods
-        //          example: (phone, desk, computer, coffee cup)
+//    constructors = special method that is called when an object is instantiated (created)
 
-        Car myCar1 = new Car();
-        Car myCar2 = new Car();
+        Human human = new Human("Rick",65,70);
+        Human human2 = new Human("Morty",16,50);
 
-        System.out.println(myCar1.price);
-        System.out.println(myCar1.model);
-        System.out.println(myCar1.color);
-        System.out.println("");
-        System.out.println(myCar2.price);
-        System.out.println(myCar2.model);
-        System.out.println(myCar2.color);
+//        System.out.println(human2.name);
 
-//        myCar.drive();/*
-//        myCar.brake();
+    human.eat();
+    human2.drink();
     }
+
 }
 
