@@ -1,19 +1,15 @@
-
 package Learning;
 
 public class YtLearning {
 
     public static void main(String[] args) {
+//    local =   declared inside a methode
+//                visible to the methode
 
-//    constructors = special method that is called when an object is instantiated (created)
+//    global =  declared outside  method, but within a class
+//              visible to all parts of a class
 
-        Human human = new Human("Rick",65,70);
-        Human human2 = new Human("Morty",16,50);
-
-//        System.out.println(human2.name);
-
-    human.eat();
-    human2.drink();
+        DiceRoller diceRoller = new DiceRoller();
     }
 
 }
