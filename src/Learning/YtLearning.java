@@ -3,14 +3,18 @@ package Learning;
 public class YtLearning {
 
     public static void main(String[] args) {
-//    local =   declared inside a methode
-//                visible to the methode
 
-//    global =  declared outside  method, but within a class
-//              visible to all parts of a class
+//        overloaded constructors = multiple constructors within a class with the same name,
+//                                  but have different parameters
+//                                  name + parameters = signature
 
-        DiceRoller diceRoller = new DiceRoller();
+        Pizza pizza = new Pizza("thicc crust", "tomato", "mozarella", "pepperoni");
+
+        System.out.println("Here are the ingredients of your pizza: ");
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
     }
-
 }
 
