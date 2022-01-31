@@ -5,56 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PizzaMachine {
-
     public static void main(String[] args) {
 
+        System.out.println("Welcome");
 
-        String none = "without the sauce";
-        String marinara = "Marinara sauce";
-        String garlic = "Garlic sauce";
-        String bbq = "BBQ sauce";
-        String cream = "Sour Cream sauce";
-
-        ArrayList<String> sauce = new ArrayList<String>();
-        sauce.add(marinara);
-        sauce.add(none);
-        sauce.add(garlic);
-        sauce.add(bbq);
-        sauce.add(cream);
-
-        print(getMeats());
-        print(getBase());
-
-        System.out.println("Hello it is your digital pizza making machine!!! ");
-        System.out.println("Make your very own pizza ");
-        System.out.println("Firstly choose pizza base from the list by typing the number of base:  ");
-
-        Scanner scanner = new Scanner(System.in);
-        int number;
-        number = scanner.nextInt();
-//        System.out.println("Ok so you want " + base.get(number - 1));
-//        System.out.println("Now choose sauce you want on your pizza  ");
-
-        System.out.println("1 " + sauce.get(0));
-        System.out.println("2 " + sauce.get(1));
-        System.out.println("3 " + sauce.get(2));
-        System.out.println("4 " + sauce.get(3));
-        System.out.println("5 " + sauce.get(4));
-
-        Scanner scanner1 = new Scanner(System.in);
-        int number1;
-        number1 = scanner1.nextInt();
-
-//        System.out.println("You chose " + base.get(number - 1) + " pizza with " + sauce.get(number1 - 1));
-//        System.out.println("What meat toppings would you like? ");
-
-        Scanner scanner2 = new Scanner(System.in);
-        int number2;
-        number2 = scanner2.nextInt();
-
-        int number3;
-        Scanner scanner3 = new Scanner(System.in);
-        number3 = scanner3.nextInt();
 
         System.out.println("Do you want any more toppings? ");
         System.out.println("Type 'letter' if you want more toppings, or 'number' if you good.  ");

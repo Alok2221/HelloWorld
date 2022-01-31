@@ -1,5 +1,7 @@
 package pl.java.swing;
+
 import javax.swing.*;
+
 public class SwingGUI {
 
     public static void main(String[] args) {
@@ -20,11 +22,7 @@ public class SwingGUI {
             }
         } while (isNotDigit);
         JOptionPane.showMessageDialog(null, "Your age is: " + age);
-
-
     }
-
-
 }
 
 
