@@ -7,7 +7,7 @@ public class HowToFile {
 
         //  file = An abstract representation of file and directory pathname
 
-        File file = new File("C:/Users/aleks/Desktop/Projekty/HelloWorld/src/Learning/fileclass/secret_message.txt");
+        File file = new File("src/Learning/fileclass/secret_message.txt");
 
         if (file.exists()) {
             System.out.println("That file exists! :O");
